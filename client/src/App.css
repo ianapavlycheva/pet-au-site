@@ -1,0 +1,5 @@
+header,
+footer {
+  background-color: #000; /* Ensure visibility */
+  padding: 20px;
+}
