@@ -26,7 +26,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { client } from '../../sanity';
-// import { PortableText } from '@portabletext/react';
+import { PortableText } from '@portabletext/react';
 
 export default function News() {
   const [news, setNews] = useState([]);
@@ -58,8 +58,8 @@ export default function News() {
             <p style={{ color: 'gray' }}>
               {new Date(item.publishedAt).toLocaleDateString()}
             </p>
-            {/* <PortableText value={item.body} /> */}
-            <p>{item.body ? 'Body exists' : 'No body'}</p>
+            <PortableText value={item.body} />
+
             <hr />
           </div>
         ))
