@@ -4,12 +4,13 @@ import Footer from './components/Footer';
 import AppRoutes from './routes/AppRoutes';  
 import { BrowserRouter } from 'react-router-dom';  
 
+
 function App() {
   return (
     <BrowserRouter>  
       <div>
         <Header />
-        <AppRoutes />  This will render your routes
+        <AppRoutes />
         <Footer />
       </div>
     </BrowserRouter>

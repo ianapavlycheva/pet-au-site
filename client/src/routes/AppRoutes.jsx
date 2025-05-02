@@ -26,13 +26,13 @@ export default function AppRoutes() {
       <Route path="/community" element={<Community />} />
       <Route path="/community/insights" element={<Insights />} />
       <Route path="/community/news" element={<News />} />
-      <Route path="/community/events" element={<Events />} />
-      <Route path="/community/events/upcoming" element={<Upcoming />} />
-      <Route path="/community/events/past" element={<Past />} />
+        <Route path="/community/events" element={<Events />} />
+        <Route path="/community/events/upcoming" element={<Upcoming />} />
+        <Route path="/community/events/past" element={<Past />} />
       
       <Route path="/partners" element={<Partners />} />
       <Route path="/volunteer" element={<Volunteer />} />
-      <Route path="/join" element={<RequestToJoin />} />
+<Route path="/requestToJoin" element={<RequestToJoin />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/newsletter" element={<Newsletter />} />
     </Routes>
