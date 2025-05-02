@@ -1,8 +1,3 @@
-import dotenv from 'dotenv'
-
-// Load environment variables from the .env file
-dotenv.config()
-
 import {defineConfig} from 'sanity'
 import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
@@ -12,9 +7,8 @@ export default defineConfig({
   name: 'default',
   title: 'pet-hub-studio',
 
-  // Access project ID and dataset from environment variables
-  projectId: process.env.SANITY_PROJECT_ID,
-  dataset: process.env.SANITY_DATASET,
+  projectId: 'r02fqaop',
+  dataset: 'production',
 
   plugins: [structureTool(), visionTool()],
 
